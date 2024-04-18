@@ -1,4 +1,16 @@
 {
+  "name": "mongodb-social-network-api",
+  "description": "social network api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "seed": "node utils/seed"
+  },
   "dependencies": {
     "express": "^4.19.2",
     "mongoose": "^8.3.2"
