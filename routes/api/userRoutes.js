@@ -1,8 +1,7 @@
-const router = require('express').Router()
+const router = require('express').Router();
+const { getUser, createUser} = require('../../controllers/userController')
 
-
-router.get('/', async (req, res) => {
-    res.status(200).json("user Route")
-})
+// /api/users
+router.route('/').get(getUser).post(createUser)
 
 module.exports = router;
