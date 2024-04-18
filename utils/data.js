@@ -3,8 +3,8 @@ const userData = [
     {
         username: "johnDoe",
         email: "johndoe@example.com",
-        thoughts: [],  // Assuming you would fill this with ObjectIds from the Thought collection
-        friends: []  // Assuming you would fill this with ObjectIds from the User collection
+        thoughts: [],
+        friends: []  
     },
     {
         username: "janeDoe",

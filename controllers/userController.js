@@ -1,18 +1,15 @@
-const { ObjectId } = require('mongoose').Types
-const { userInfo } = require('os')
-const { User } = require('../models/User')
+const { User } = require('../models')
 
 module.exports = {
-    async getUser(req, res) {
+    async getUsers(req, res) {
         try {
-            const user = await User.find()
-            const userObj = { user }
-            return res.json(userObj)
+          const user = await User.find();
+          return res.json(user);
         } catch (err) {
-            console.log(err)
-            return res.status(500).json(err)
+          console.log(err);
+          return res.status(500).json(err);
         }
-    },
+      },
 
     async createUser(req, res) {
         try {
